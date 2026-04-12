@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>G7Cripto_Copies_Pautas_Brief_Completo</title>
+  <style>
+    :root{
+      --bg:#f3efe8;
+      --paper:#ffffff;
+      --ink:#181818;
+      --muted:#6f6f6f;
+      --line:#ded7cc;
+      --green:#0F6E56;
+      --green-soft:#edf8f3;
+      --blue:#185FA5;
+      --blue-soft:#eef5fd;
+      --red:#7b1f22;
+      --red-soft:#fdf1f1;
+      --amber:#8a5b10;
+      --amber-soft:#fff7ea;
+      --purple:#4f46b6;
+      --purple-soft:#f4f3ff;
+      --gray-soft:#faf8f3;
+      --black:#101010;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+    .wrap{max-width:1200px;margin:0 auto;padding:24px 18px 56px}
+    .hero{background:linear-gradient(135deg,#111,#191919 55%, #0F6E56 140%);color:#fff;border-radius:22px;padding:30px;box-shadow:0 12px 30px rgba(0,0,0,.12);margin-bottom:18px}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#bcbcbc;margin-bottom:8px}
+    h1{margin:0 0 12px;font-size:36px;line-height:1.1}
+    h2{margin:0 0 12px;font-size:24px}
+    h3{margin:0 0 10px;font-size:18px}
+    h4{margin:0 0 8px;font-size:15px}
+    p{margin:0 0 10px}
+    .sub{max-width:980px;color:#d8d8d8;font-size:16px}
+    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .pill{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);font-size:12px}
+    .section{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:16px}
+    .grid{display:grid;gap:14px}
+    .g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .g4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .card{background:var(--gray-soft);border:1px solid var(--line);border-radius:14px;padding:16px}
+    .card.white{background:#fff}
+    .tag{display:inline-block;font-size:11px;padding:4px 9px;border-radius:999px;font-weight:700;letter-spacing:.03em}
+    .red{background:var(--red-soft);color:var(--red)}
+    .amber{background:var(--amber-soft);color:var(--amber)}
+    .green{background:var(--green-soft);color:var(--green)}
+    .blue{background:var(--blue-soft);color:var(--blue)}
+    .purple{background:var(--purple-soft);color:var(--purple)}
+    .muted{color:var(--muted)}
+    .small{font-size:13px}
+    .mini{font-size:12px}
+    .table{width:100%;border-collapse:collapse;font-size:14px}
+    .table th,.table td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    .table th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#666}
+    .note,.warn,.danger,.info{padding:12px 14px;border-radius:0 12px 12px 0;margin:12px 0}
+    .note{background:var(--green-soft);border-left:4px solid var(--green)}
+    .warn{background:var(--amber-soft);border-left:4px solid var(--amber)}
+    .danger{background:var(--red-soft);border-left:4px solid var(--red)}
+    .info{background:var(--blue-soft);border-left:4px solid var(--blue)}
+    .country{border:1px solid var(--line);background:#fff;border-radius:18px;overflow:hidden;margin-bottom:18px}
+    .country-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;background:#fcfbf8}
+    .country-body{padding:20px}
+    .stats{display:flex;flex-wrap:wrap;gap:10px}
+    .stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:110px}
+    .stat .k{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#777}
+    .stat .v{font-size:18px;font-weight:700;margin-top:3px}
+    .piece{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fbfbfa;margin-bottom:12px}
+    .piece-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:10px}
+    .piece-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .field{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
+    .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#777;margin-bottom:4px}
+    .txt{font-size:13px;color:#202020}
+    ul{margin:8px 0 0 18px;padding:0}
+    li{margin-bottom:6px}
+    .equation{font-size:24px;font-weight:700;line-height:1.3;padding:18px;border-radius:16px;background:linear-gradient(90deg,var(--green-soft),#fff);border:1px solid #bfe2d6}
+    .footer{margin-top:18px;font-size:12px;color:#666}
+    @media (max-width: 900px){
+      .g2,.g3,.g4,.piece-grid{grid-template-columns:1fr}
+      h1{font-size:29px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="eyebrow">G7Cripto · Performance Marketing · Documento maestro · Abril 12, 2026</div>
+      <h1>G7Cripto_Copies_Pautas_Brief_Completo</h1>
+      <div class="sub">Brief completo para Nicki, Líder de Marketing. Enfoque exclusivo en captación de modelos independientes en LATAM mediante campañas pagas en Google Ads, TikTok y Meta, con objetivo 100% orientado a descargas y una nueva tesis comercial basada en costo total, rapidez, seguridad y experiencia para ganar volumen.</div>
+      <div class="meta">
+        <span class="pill">Google Ads activo en 7 países</span>
+        <span class="pill">TikTok activo desde noviembre</span>
+        <span class="pill">Meta entra en fase actual</span>
+        <span class="pill">Presupuesto inicial: USD 1.000</span>
+        <span class="pill">Desarrollado por Guillermo L. Valencia (CEO)</span>
+        <span class="pill">Audiencia: modelos independientes</span>
+        <span class="pill">Mercados: CO · MX · AR · CL · EC · PA · UY</span>
+      </div>
+    </div>
+
+
+
+    <div class="section">
+      <h2>0. Ficha del documento y condición estratégica de activación</h2>
+      <div class="grid g2">
+        <div class="card white">
+          <h4>Identificación del documento</h4>
+          <table class="table">
+            <tbody>
+              <tr><td><strong>Nombre oficial</strong></td><td>G7Cripto_Copies_Pautas_Brief_Completo</td></tr>
+              <tr><td><strong>Desarrollado por</strong></td><td>Guillermo L. Valencia (CEO)</td></tr>
+              <tr><td><strong>Fecha</strong></td><td>Abril 12, 2026</td></tr>
+              <tr><td><strong>Propósito</strong></td><td>Documento maestro para orientar la captación de modelos independientes mediante campañas pagas en Google Ads, Meta y TikTok.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card white">
+          <h4>Tesis de implementación</h4>
+          <p class="small">Este brief <strong>no debe implementarse de forma parcial ni anticipada</strong>. Su ejecución debe comenzar únicamente cuando el ecosistema comercial, tecnológico, operativo y legal de G7 esté completamente alineado para sostener el volumen que las campañas generen.</p>
+          <div class="note small"><strong>Principio rector:</strong> primero capacidad real de conversión, atención y operación; después aceleración de pauta.</div>
+        </div>
+      </div>
+      <div class="danger small"><strong>Condición obligatoria de activación:</strong> la implementación de este brief deberá iniciar únicamente cuando las landing pages de los 7 países en <strong>www.g7cripto.com</strong>, la landing page de <strong>www.g7fintech.com</strong> y la App G7Cripto estén al <strong>100%</strong>; cuando <strong>SOFI</strong>, la IA de la compañía, esté 100% actualizada; cuando el equipo operativo y comercial esté 100% entrenado y enterado de cada proceso por país; y cuando Tesorería, el área financiera y el área legal estén 100% actualizados, preparados y alineados para responder al volumen generado por pauta.</div>
+    </div>
+
+    <div class="section">
+      <h2>0.1. Condiciones previas obligatorias para implementación</h2>
+      <div class="grid g3">
+        <div class="card">
+          <span class="tag blue">Infraestructura digital</span>
+          <h4 style="margin-top:10px">Landings y presencia web completas</h4>
+          <ul class="small">
+            <li>Landing pages de los 7 países de <strong>g7cripto.com</strong> publicadas, funcionales y revisadas.</li>
+            <li>Landing page de <strong>g7fintech.com</strong> 100% terminada y coherente con la propuesta institucional.</li>
+            <li>Mensajes, CTAs, formularios, enlaces y eventos de medición validados.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag purple">Producto y tecnología</span>
+          <h4 style="margin-top:10px">App y ecosistema listos</h4>
+          <ul class="small">
+            <li>App G7Cripto 100% actualizada en producto, textos, UX y rutas por país.</li>
+            <li>SOFI 100% actualizada para responder correctamente dentro del flujo comercial y operativo.</li>
+            <li>Tracking, eventos, deep links y medición de descargas/registro funcionando correctamente.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag green">Capacidad de respuesta</span>
+          <h4 style="margin-top:10px">Equipos preparados para volumen</h4>
+          <ul class="small">
+            <li>Equipo operativo y comercial 100% entrenado por país.</li>
+            <li>Tesorería y Finanzas listas para sostener rapidez, control y trazabilidad.</li>
+            <li>Área legal 100% actualizada en documentos, procesos, respuestas y contingencias.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="warn small"><strong>Lógica estratégica:</strong> si el usuario descargado encuentra una landing incompleta, una app desactualizada, respuestas inconsistentes o equipos sin preparación, la pauta acelera el desperdicio de dinero en lugar de acelerar volumen rentable. Por eso este brief parte de una premisa simple: <strong>solo escalar cuando la infraestructura interna esté lista para convertir, atender y retener</strong>.</div>
+    </div>
+
+    <div class="section">
+      <h2>1. Cambio de enfoque estratégico</h2>
+      <p>G7Cripto no debe venderse solo como una app para recibir pagos. Debe venderse como una <strong>alternativa superior frente a wallets y rieles tradicionales</strong> que hoy ya pagan mejor que antes, pero siguen castigando al modelo independiente con costos altos, tasas de cambio poco favorables y una experiencia poco flexible.</p>
+      <div class="equation">COSTOS BAJOS + RAPIDEZ + SEGURIDAD + EXPERIENCIA = VOLUMEN</div>
+      <div class="grid g3" style="margin-top:14px">
+        <div class="card">
+          <h4>Tesis competitiva</h4>
+          <p class="small">Muchas soluciones existentes ya pagan más eficiente que antes, pero siguen representando un costo total alto para el modelo independiente. G7Cripto entra a competir no solo por velocidad, sino por <strong>costo total efectivo</strong>.</p>
+        </div>
+        <div class="card">
+          <h4>Oferta económica base</h4>
+          <p class="small">Países dolarizados: <strong>3.5% sobre valor bruto en USD</strong>. Países no dolarizados: <strong>tasa spot menos 177 puntos</strong>. Esta estructura debe transformarse en mensajes claros de ahorro y mejor experiencia.</p>
+        </div>
+        <div class="card">
+          <h4>Objetivo real</h4>
+          <p class="small">No competir por discurso institucional. Competir por una promesa sencilla: <strong>pierde menos, cobra más rápido y con más control</strong>.</p>
+        </div>
+      </div>
+      <div class="note small"><strong>Instrucción clave:</strong> en comunicación pública no nombrar PayPal, Paxum, Cosmo u otras marcas directamente. Internamente sí sirven como marco comparativo para entender el dolor. Hacia el usuario final el lenguaje debe ser genérico: costos altos, conversiones castigadas, demoras, poca flexibilidad y falta de control.</div>
+    </div>
+
+    <div class="section">
+      <h2>2. Qué se quiere lograr</h2>
+      <div class="grid g4">
+        <div class="card"><h4>Meta de negocio</h4><p class="small">Aumentar volumen de usuarios captados para luego convertir ese volumen en más retiros, más recurrencia y más tracción orgánica.</p></div>
+        <div class="card"><h4>Meta de medios</h4><p class="small">Maximizar descargas con el presupuesto inicial sin dispersar demasiado el aprendizaje por país ni por canal.</p></div>
+        <div class="card"><h4>Meta creativa</h4><p class="small">Instalar una nueva idea mental: G7Cripto es una forma más inteligente de cobrar porque cuesta menos y se mueve más rápido.</p></div>
+        <div class="card"><h4>Meta táctica</h4><p class="small">Usar Google para capturar intención, TikTok para abrir demanda y Meta para escalar y estabilizar instalaciones.</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>3. Reglas maestras de comunicación</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h4>Siempre decir</h4>
+          <ul class="small">
+            <li>Un solo saldo en USD.</li>
+            <li>Retiro same-day.</li>
+            <li>Sin montos mínimos.</li>
+            <li>Wallet verificada por KYC.</li>
+            <li>Cripto o banco local.</li>
+            <li>Más control sobre lo que cobras.</li>
+            <li>Mejor costo total y mejor experiencia.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Nunca decir</h4>
+          <ul class="small">
+            <li>No mencionar explícitamente el nicho adulto.</li>
+            <li>No prometer ingresos ni rendimientos.</li>
+            <li>No hablar de custodia.</li>
+            <li>No presentar a G7Cripto como banco o inversión.</li>
+            <li>No hacer comparaciones directas de marca en anuncios públicos.</li>
+            <li>No usar lenguaje de “dinero fácil”.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="warn small"><strong>Regla táctica:</strong> el discurso de precio debe presentarse como “menos costo total”, “mejor tasa”, “menos castigo al cobrar” o “cobrás más de lo que generás”, no como una guerra de centavos difícil de entender. El usuario debe sentir ahorro sin necesidad de hacer una tabla financiera.</div>
+    </div>
+
+    <div class="section">
+      <h2>4. Oferta y palancas promocionales</h2>
+      <p>La estructura económica actual ya es competitiva, pero para ganar volumen se pueden abrir campañas con incentivo de entrada sin comprometer la lógica del producto. El foco es capturar usuarios, probar adopción y luego moverlos a comportamiento recurrente.</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Palanca</th>
+            <th>Qué comunica</th>
+            <th>Dónde usarla</th>
+            <th>Observación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Ahorro</strong></td>
+            <td>“Perdés menos al cobrar” / “Mejor costo total” / “Más dinero llega a tu bolsillo”</td>
+            <td>Google, Meta, TikTok</td>
+            <td>Es la palanca más potente para Colombia, México, Argentina, Ecuador y Panamá.</td>
+          </tr>
+          <tr>
+            <td><strong>Velocidad</strong></td>
+            <td>“Retiro same-day” / “Lo pedís hoy, lo recibís hoy”</td>
+            <td>TikTok, Meta, Google</td>
+            <td>Debe acompañar al ahorro, no reemplazarlo.</td>
+          </tr>
+          <tr>
+            <td><strong>Seguridad</strong></td>
+            <td>“KYC, aliados sólidos, trazabilidad, wallet verificada”</td>
+            <td>Meta, Landing, remarketing</td>
+            <td>Es clave para bajar fricción antes del registro.</td>
+          </tr>
+          <tr>
+            <td><strong>Experiencia</strong></td>
+            <td>“Todo en un solo saldo” / “Cripto o banco local” / “Sin montos mínimos”</td>
+            <td>Todos</td>
+            <td>Sirve como respuesta concreta al dolor de pagos dispersos.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="grid g3" style="margin-top:12px">
+        <div class="card">
+          <h4>Promoción sugerida A</h4>
+          <p class="small"><strong>Costo de bienvenida</strong> por tiempo limitado para nuevos usuarios del país objetivo.</p>
+        </div>
+        <div class="card">
+          <h4>Promoción sugerida B</h4>
+          <p class="small"><strong>Primer retiro con condición preferencial</strong> para quitar miedo a la prueba.</p>
+        </div>
+        <div class="card">
+          <h4>Promoción sugerida C</h4>
+          <p class="small"><strong>Campaña de comparación silenciosa</strong>: sin nombrar competidores, mostrar el beneficio de perder menos por costos y cambios.</p>
+        </div>
+      </div>
+      <div class="danger small"><strong>Guardrails:</strong> no abrir demasiadas promos al mismo tiempo. Primero testear un ángulo por país: ahorro, velocidad o ahorro+velocidad. Si todo el mundo entra por “promoción”, pero nadie se queda, el volumen no sirve.</div>
+    </div>
+
+    <div class="section">
+      <h2>5. Presupuesto recomendado por país</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>País</th>
+            <th>Presupuesto</th>
+            <th>Google</th>
+            <th>TikTok</th>
+            <th>Meta</th>
+            <th>Rol</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Colombia</strong></td><td>USD 300</td><td>105</td><td>120</td><td>75</td><td>Mercado principal. Dolor alto y mayor escala.</td></tr>
+          <tr><td><strong>México</strong></td><td>USD 220</td><td>77</td><td>88</td><td>55</td><td>Segundo mercado. Volumen y estabilidad.</td></tr>
+          <tr><td><strong>Argentina</strong></td><td>USD 180</td><td>63</td><td>72</td><td>45</td><td>Mercado especial. USD y cripto como defensa de valor.</td></tr>
+          <tr><td><strong>Chile</strong></td><td>USD 120</td><td>54</td><td>24</td><td>42</td><td>Mercado de eficiencia y control.</td></tr>
+          <tr><td><strong>Ecuador</strong></td><td>USD 70</td><td>32</td><td>14</td><td>24</td><td>Dolarizado. Mensaje fuerte de costo bajo.</td></tr>
+          <tr><td><strong>Panamá</strong></td><td>USD 70</td><td>32</td><td>14</td><td>24</td><td>Dolarizado. Mensaje fuerte de costo bajo.</td></tr>
+          <tr><td><strong>Uruguay</strong></td><td>USD 40</td><td>28</td><td>0</td><td>12</td><td>Test mínimo. Enfoque aspiracional.</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>USD 1.000</strong></td><td><strong>391</strong></td><td><strong>332</strong></td><td><strong>277</strong></td><td>Priorizar mercados con mayor señal y mejor lectura del producto.</td></tr>
+        </tbody>
+      </table>
+      <div class="info small"><strong>Razonamiento:</strong> con USD 1.000 no conviene repartir igual entre 7 países y 3 canales. La prioridad sigue siendo Colombia, luego México y Argentina. Ecuador y Panamá tienen buen ángulo económico, pero menor escala. Uruguay queda solo como prueba.</div>
+    </div>
+
+    <div class="section">
+      <h2>6. Arquitectura de campañas por plataforma</h2>
+      <div class="grid g3">
+        <div class="card">
+          <span class="tag blue">Google Ads</span>
+          <h3 style="margin-top:10px">Captura intención</h3>
+          <ul class="small">
+            <li>Usar campañas de app para instalaciones.</li>
+            <li>Separar por país o por cluster sin solapamientos innecesarios.</li>
+            <li>Activos diversos: texto, imágenes, videos y versiones verticales.</li>
+            <li>Mensajes simples que funcionen por separado: ahorro, same-day, saldo único.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag purple">TikTok</span>
+          <h3 style="margin-top:10px">Abre demanda</h3>
+          <ul class="small">
+            <li>Usar App Promotion / Smart+ si el tracking está listo.</li>
+            <li>Hooks en 3 segundos: costo, rapidez, comparación emocional.</li>
+            <li>Creatividades humanas, subtituladas y muy directas.</li>
+            <li>Rotar varias piezas por país para evitar fatiga temprana.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="tag green">Meta</span>
+          <h3 style="margin-top:10px">Escala y estabiliza</h3>
+          <ul class="small">
+            <li>Usar campañas de app con Advantage+ cuando sea posible.</li>
+            <li>Reels y Stories como formatos principales.</li>
+            <li>Tomar ángulos ganadores de TikTok y volverlos más limpios y más financieros.</li>
+            <li>Usar piezas de confianza y claridad para bajar fricción de instalación.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="warn small"><strong>Operación:</strong> el tráfico frío debe ir prioritariamente a descarga. Las landings por país sirven para confianza, validación y remarketing, pero no deberían ser el paso principal de adquisición si la meta actual es instalación.</div>
+    </div>
+
+    <div class="section">
+      <h2>7. Sugerencias ganadoras globales</h2>
+      <div class="grid g2">
+        <div class="card white">
+          <h4>Hooks ganadores</h4>
+          <ul class="small">
+            <li>“¿Cuánto pierdes cada vez que cobras?”</li>
+            <li>“Tus pagos no deberían costarte tanto.”</li>
+            <li>“Cobrás en varias plataformas, pero perdés más de lo que crees.”</li>
+            <li>“Un solo saldo. Menos costo. Más control.”</li>
+            <li>“Lo que generás debería llegarte mejor.”</li>
+          </ul>
+        </div>
+        <div class="card white">
+          <h4>Mensajes transversales</h4>
+          <ul class="small">
+            <li>Ahorro sin tecnicismos.</li>
+            <li>Rapidez como prueba tangible.</li>
+            <li>Confianza con KYC y aliados.</li>
+            <li>Control: cripto o banco local.</li>
+            <li>Experiencia: todo en un solo lugar.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="note small"><strong>Plantilla de copy universal:</strong> problema visible + costo oculto + solución clara + beneficio concreto + CTA de descarga.</div>
+    </div>
+
+    <div class="country">
+      <div class="country-head">
+        <div>
+          <span class="tag red">Colombia</span>
+          <h2 style="margin-top:8px">Playbook país</h2>
+          <p class="muted small">Mercado principal. Mayor urgencia, mayor volumen y mayor capacidad de respuesta al mensaje económico.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="k">Presupuesto</div><div class="v">USD 300</div></div>
+          <div class="stat"><div class="k">Piezas</div><div class="v">6</div></div>
+          <div class="stat"><div class="k">Hook base</div><div class="v">Ahorro</div></div>
+          <div class="stat"><div class="k">Canal líder</div><div class="v">TikTok</div></div>
+        </div>
+      </div>
+      <div class="country-body">
+        <div class="grid g3">
+          <div class="card"><h4>Ángulo principal</h4><p class="small">Estás cobrando, pero te están castigando entre comisiones, cambios y demoras.</p></div>
+          <div class="card"><h4>Promesa</h4><p class="small">Perdés menos al cobrar y lo recibís el mismo día.</p></div>
+          <div class="card"><h4>Oferta sugerida</h4><p class="small">Campaña de costo preferencial de bienvenida o primer retiro en condiciones preferenciales.</p></div>
+        </div>
+
+        <div class="piece">
+          <div class="piece-head"><strong>Pieza 1 · TikTok / Reels — Problema económico</strong><span class="tag purple">Video</span></div>
+          <div class="piece-grid">
+            <div class="field"><div class="lbl">Texto principal en diseño</div><div class="txt">¿Tus pagos llegan… pero cada retiro te quita demasiado?</div></div>
+            <div class="field"><div class="lbl">Apoyo</div><div class="txt">Comisiones + cambio castigado + espera = menos dinero para ti.</div></div>
+            <div class="field"><div class="lbl">Remate</div><div class="txt">Con G7Cripto lo pedís hoy y lo recibís hoy. En cripto o en tu banco.</div></div>
+            <div class="field"><div class="lbl">CTA</div><div class="txt">Descarga G7Cripto</div></div>
+          </div>
+        </div>
+
+        <div class="piece">
+          <div class="piece-head"><strong>Pieza 2 · Meta Carrusel — Un solo saldo</strong><span class="tag green">Carrusel</span></div>
+          <div class="piece-grid">
+            <div class="field"><div class="lbl">Slide 1</div><div class="txt">¿Pagos en distintos lugares?</div></div>
+            <div class="field"><div class="lbl">Slide 2</div><div class="txt">G7Cripto consolida todo en un saldo en USD.</div></div>
+            <div class="field"><div class="lbl">Slide 3</div><div class="txt">Retirás cuando querés.</div></div>
+            <div class="field"><div class="lbl">Slide 4</div><div class="txt">Same-day, sin montos mínimos.</div></div>
+          </div>
+        </div>
+
+        <div class="piece"><div class="piece-head"><strong>Pieza 3 · Google assets</strong><span class="tag blue">Search/App</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headlines</div><div class="txt">Cobra mejor tus pagos · Un saldo para todo · Retiro same-day · Menos costo al cobrar · Wallet verificada</div></div><div class="field"><div class="lbl">Descriptions</div><div class="txt">Consolida tus pagos en USD y retira el mismo día. Menos castigo al cobrar, más control para ti.</div></div></div></div>
+
+        <div class="piece"><div class="piece-head"><strong>Pieza 4 · TikTok testimonio</strong><span class="tag purple">Spark</span></div><div class="piece-grid"><div class="field"><div class="lbl">Hook</div><div class="txt">Yo no necesitaba otra wallet. Necesitaba perder menos cuando cobraba.</div></div><div class="field"><div class="lbl">Mensaje</div><div class="txt">Ahora todo me llega a un solo saldo y retiro cuando quiero.</div></div></div></div>
+      </div>
+    </div>
+
+    <div class="country">
+      <div class="country-head">
+        <div><span class="tag red">México</span><h2 style="margin-top:8px">Playbook país</h2><p class="muted small">Segundo mercado. Debe mezclar ahorro con orden y control.</p></div>
+        <div class="stats"><div class="stat"><div class="k">Presupuesto</div><div class="v">USD 220</div></div><div class="stat"><div class="k">Piezas</div><div class="v">5</div></div><div class="stat"><div class="k">Hook base</div><div class="v">Control</div></div><div class="stat"><div class="k">Canal líder</div><div class="v">TikTok</div></div></div>
+      </div>
+      <div class="country-body">
+        <div class="grid g3"><div class="card"><h4>Ángulo principal</h4><p class="small">Deja de cobrar desordenado y con fricción.</p></div><div class="card"><h4>Promesa</h4><p class="small">Todo en un saldo, más claro, más rápido y con mejor costo total.</p></div><div class="card"><h4>Oferta sugerida</h4><p class="small">Campaña de “menos costo para empezar” o “primer retiro con beneficio”.</p></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 1 · Video corto</strong><span class="tag purple">TikTok / Reels</span></div><div class="piece-grid"><div class="field"><div class="lbl">Texto diseño</div><div class="txt">Si tus plataformas pagan distinto, no deberías perder más por cobrar.</div></div><div class="field"><div class="lbl">Remate</div><div class="txt">Con G7Cripto todo llega a un solo saldo y retiras cuando quieras.</div></div></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 2 · Estático Meta</strong><span class="tag green">Imagen</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headline</div><div class="txt">Menos costo. Más control.</div></div><div class="field"><div class="lbl">Subheadline</div><div class="txt">Saldo en USD, retiro same-day y wallet verificada.</div></div></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 3 · Google assets</strong><span class="tag blue">Search/App</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headlines</div><div class="txt">Tus pagos en un saldo · Retira hoy mismo · Cobra mejor en MX · Sin montos mínimos · Wallet verificada</div></div><div class="field"><div class="lbl">Descriptions</div><div class="txt">Consolida tus pagos y elige cómo retirar. Menos fricción, mejor experiencia y mismo día.</div></div></div></div>
+      </div>
+    </div>
+
+    <div class="country">
+      <div class="country-head">
+        <div><span class="tag red">Argentina</span><h2 style="margin-top:8px">Playbook país</h2><p class="muted small">Mercado especial. El mensaje económico debe conectar con preservación de valor.</p></div>
+        <div class="stats"><div class="stat"><div class="k">Presupuesto</div><div class="v">USD 180</div></div><div class="stat"><div class="k">Piezas</div><div class="v">6</div></div><div class="stat"><div class="k">Hook base</div><div class="v">USD / Cripto</div></div><div class="stat"><div class="k">Canal líder</div><div class="v">TikTok</div></div></div>
+      </div>
+      <div class="country-body">
+        <div class="grid g3"><div class="card"><h4>Ángulo principal</h4><p class="small">No solo cobrar. Cobrar sin perder valor.</p></div><div class="card"><h4>Promesa</h4><p class="small">USD real, USDT, USDC o BTC. Vos elegís cómo salir.</p></div><div class="card"><h4>Oferta sugerida</h4><p class="small">Promoción enfocada en salida cripto o spread preferencial de entrada.</p></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 1 · Video problema</strong><span class="tag purple">TikTok / Reels</span></div><div class="piece-grid"><div class="field"><div class="lbl">Texto diseño</div><div class="txt">Cobrar no debería hacerte perder valor.</div></div><div class="field"><div class="lbl">Apoyo</div><div class="txt">Con G7Cripto elegís USD, USDT, USDC o BTC.</div></div><div class="field"><div class="lbl">Remate</div><div class="txt">Todo en un solo saldo. Retiro same-day.</div></div><div class="field"><div class="lbl">CTA</div><div class="txt">Descargá G7Cripto</div></div></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 2 · Meta estático</strong><span class="tag green">Imagen</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headline</div><div class="txt">Cobrá mejor. Elegís vos.</div></div><div class="field"><div class="lbl">Subheadline</div><div class="txt">Saldo en USD, retiro en cripto o banco. Wallet verificada.</div></div></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 3 · Google assets</strong><span class="tag blue">Search/App</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headlines</div><div class="txt">Cobrá en USD real · Elegí USDT o BTC · Retiro same-day · Un saldo para todo · Wallet verificada</div></div><div class="field"><div class="lbl">Descriptions</div><div class="txt">Consolidá pagos en un saldo en USD y elegí cómo salir. Cripto o banco, con más control.</div></div></div></div>
+      </div>
+    </div>
+
+    <div class="country">
+      <div class="country-head">
+        <div><span class="tag amber">Chile</span><h2 style="margin-top:8px">Playbook país</h2><p class="muted small">Mercado de eficiencia. Menos urgencia, más claridad y rapidez.</p></div>
+        <div class="stats"><div class="stat"><div class="k">Presupuesto</div><div class="v">USD 120</div></div><div class="stat"><div class="k">Piezas</div><div class="v">4</div></div><div class="stat"><div class="k">Hook base</div><div class="v">Eficiencia</div></div><div class="stat"><div class="k">Canal líder</div><div class="v">Google</div></div></div>
+      </div>
+      <div class="country-body">
+        <div class="grid g3"><div class="card"><h4>Ángulo principal</h4><p class="small">Un proceso más simple, más claro y más rápido.</p></div><div class="card"><h4>Promesa</h4><p class="small">Un saldo. Retiro en CLP. Same-day.</p></div><div class="card"><h4>Oferta sugerida</h4><p class="small">Costo total competitivo sin discurso agresivo de guerra de precios.</p></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 1 · Meta / Reels</strong><span class="tag green">Video</span></div><div class="piece-grid"><div class="field"><div class="lbl">Texto diseño</div><div class="txt">Todos tus pagos, en un solo lugar.</div></div><div class="field"><div class="lbl">Apoyo</div><div class="txt">Retira en CLP, el mismo día, con más control y menos fricción.</div></div></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 2 · Google assets</strong><span class="tag blue">Search/App</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headlines</div><div class="txt">Retiro en CLP hoy · Un saldo para todo · Más control al cobrar · Wallet verificada · Sin montos mínimos</div></div><div class="field"><div class="lbl">Descriptions</div><div class="txt">Consolida pagos y retira cuando quieras. Más simple, más rápido y con mejor experiencia.</div></div></div></div>
+      </div>
+    </div>
+
+    <div class="country">
+      <div class="country-head">
+        <div><span class="tag amber">Ecuador</span><h2 style="margin-top:8px">Playbook país</h2><p class="muted small">País dolarizado. Aquí el ángulo económico es muy claro.</p></div>
+        <div class="stats"><div class="stat"><div class="k">Presupuesto</div><div class="v">USD 70</div></div><div class="stat"><div class="k">Piezas</div><div class="v">4</div></div><div class="stat"><div class="k">Hook base</div><div class="v">USD directo</div></div><div class="stat"><div class="k">Canal líder</div><div class="v">Google</div></div></div>
+      </div>
+      <div class="country-body">
+        <div class="grid g3"><div class="card"><h4>Ángulo principal</h4><p class="small">Cobrar en USD con menor costo total y sin conversión innecesaria.</p></div><div class="card"><h4>Promesa</h4><p class="small">Pagos en USD, retiro en USD, mismo día.</p></div><div class="card"><h4>Oferta sugerida</h4><p class="small">Entrada agresiva con campaña de costo competitivo para primeras conversiones.</p></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 1 · Estático</strong><span class="tag green">Meta</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headline</div><div class="txt">Tus pagos en USD, sin castigo extra.</div></div><div class="field"><div class="lbl">Subheadline</div><div class="txt">Un solo saldo. Retiro same-day. Wallet verificada.</div></div></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 2 · Google assets</strong><span class="tag blue">Search/App</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headlines</div><div class="txt">Cobra en USD mejor · Menos costo total · Retiro hoy mismo · Sin montos mínimos · Un saldo en USD</div></div><div class="field"><div class="lbl">Descriptions</div><div class="txt">Consolida pagos en USD y retira el mismo día. Más claro, más rápido y con más control.</div></div></div></div>
+      </div>
+    </div>
+
+    <div class="country">
+      <div class="country-head">
+        <div><span class="tag amber">Panamá</span><h2 style="margin-top:8px">Playbook país</h2><p class="muted small">País dolarizado. Debe reflejar ahorro + rapidez + simplicidad.</p></div>
+        <div class="stats"><div class="stat"><div class="k">Presupuesto</div><div class="v">USD 70</div></div><div class="stat"><div class="k">Piezas</div><div class="v">4</div></div><div class="stat"><div class="k">Hook base</div><div class="v">Costo bajo</div></div><div class="stat"><div class="k">Canal líder</div><div class="v">Google</div></div></div>
+      </div>
+      <div class="country-body">
+        <div class="grid g3"><div class="card"><h4>Ángulo principal</h4><p class="small">Cobrar en USD con mejor eficiencia y sin procesos complicados.</p></div><div class="card"><h4>Promesa</h4><p class="small">Menos costo. Más rapidez. Un saldo para todo.</p></div><div class="card"><h4>Oferta sugerida</h4><p class="small">Campaña de entrada con beneficio económico para probar instalación.</p></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 1 · Video corto</strong><span class="tag purple">TikTok / Reels</span></div><div class="piece-grid"><div class="field"><div class="lbl">Texto diseño</div><div class="txt">Tus pagos no deberían costarte tanto.</div></div><div class="field"><div class="lbl">Remate</div><div class="txt">G7Cripto te da un solo saldo en USD y retiro same-day.</div></div></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 2 · Google assets</strong><span class="tag blue">Search/App</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headlines</div><div class="txt">Menos costo al cobrar · Un saldo en USD · Retiro same-day · Wallet verificada · Sin montos mínimos</div></div><div class="field"><div class="lbl">Descriptions</div><div class="txt">Tus pagos en USD, en un solo lugar. Más rapidez, más control y mejor experiencia.</div></div></div></div>
+      </div>
+    </div>
+
+    <div class="country">
+      <div class="country-head">
+        <div><span class="tag green">Uruguay</span><h2 style="margin-top:8px">Playbook país</h2><p class="muted small">Mercado pequeño. Tono premium y aspiracional.</p></div>
+        <div class="stats"><div class="stat"><div class="k">Presupuesto</div><div class="v">USD 40</div></div><div class="stat"><div class="k">Piezas</div><div class="v">3</div></div><div class="stat"><div class="k">Hook base</div><div class="v">Premium</div></div><div class="stat"><div class="k">Canal líder</div><div class="v">Google</div></div></div>
+      </div>
+      <div class="country-body">
+        <div class="grid g3"><div class="card"><h4>Ángulo principal</h4><p class="small">Una forma más ordenada y moderna de cobrar ingresos digitales.</p></div><div class="card"><h4>Promesa</h4><p class="small">Más control, mejor experiencia y retiro simple.</p></div><div class="card"><h4>Oferta sugerida</h4><p class="small">No pelear por precio puro. Vender tranquilidad y estándar premium.</p></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 1 · Estático premium</strong><span class="tag green">Meta</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headline</div><div class="txt">Cobra con más control.</div></div><div class="field"><div class="lbl">Subheadline</div><div class="txt">Un saldo en USD, wallet verificada y retiro cuando quieras.</div></div></div></div>
+        <div class="piece"><div class="piece-head"><strong>Pieza 2 · Google assets</strong><span class="tag blue">Search/App</span></div><div class="piece-grid"><div class="field"><div class="lbl">Headlines</div><div class="txt">Más control al cobrar · Un saldo en USD · Retira cuando quieras · Wallet verificada · Experiencia premium</div></div><div class="field"><div class="lbl">Descriptions</div><div class="txt">Consolida pagos y retira con una experiencia más simple, más clara y más ordenada.</div></div></div></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>8. Orden de pruebas y optimización</h2>
+      <div class="grid g3">
+        <div class="card">
+          <h4>Semana 1</h4>
+          <p class="small">Lanzar todas las campañas con foco fuerte en CO, MX y AR. Un solo ángulo principal por país para no mezclar lectura.</p>
+        </div>
+        <div class="card">
+          <h4>Semana 2</h4>
+          <p class="small">No tocar demasiado. Dejar aprender a las plataformas. Medir costo por descarga y CTR creativo.</p>
+        </div>
+        <div class="card">
+          <h4>Semana 3</h4>
+          <p class="small">Mover 10% a 15% del presupuesto desde los dos peores mercados a los dos mejores si la señal ya es clara.</p>
+        </div>
+      </div>
+      <div class="info small"><strong>Qué se mide:</strong> costo por descarga, CTR, tasa de instalación, costo por registro iniciado, fatiga creativa y comentarios sobre confianza. No mirar solo clics.</div>
+    </div>
+
+    <div class="section">
+      <h2>9. Checklist final para Nicki</h2>
+      <ul class="small">
+        <li>Construir campañas con foco exclusivo en descargas.</li>
+        <li>Usar ahorro + rapidez como mensaje central en mercados de urgencia.</li>
+        <li>Adaptar el discurso a USD directo en Ecuador y Panamá.</li>
+        <li>Separar Argentina por su narrativa USD/cripto.</li>
+        <li>Tomar de TikTok los hooks ganadores para Meta.</li>
+        <li>No dispersar presupuesto en demasiadas variantes desde el día 1.</li>
+        <li>Crear una matriz de control por país: presupuesto, piezas, costo por descarga y próxima acción.</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Documento interno de trabajo desarrollado por <strong>Guillermo L. Valencia (CEO)</strong> con fecha <strong>abril 12, 2026</strong>. Actualizado para incorporar el ángulo competitivo de costo total, rapidez, seguridad y experiencia como motor de volumen. Su implementación deberá activarse únicamente cuando landings, app, SOFI, equipos operativos/comerciales y áreas de Tesorería, Finanzas y Legal estén 100% alineadas y preparadas. Metodología reforzada con lineamientos vigentes de campañas de app en Google Ads, Meta y TikTok, revisados en abril de 2026.
+    </div>
+  </div>
+</body>
+</html>
