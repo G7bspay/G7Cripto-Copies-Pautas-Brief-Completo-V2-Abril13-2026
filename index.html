@@ -165,6 +165,133 @@
 <body>
 <div class="wrap">
 
+  <!-- ═══ ALERTA NICKI ═══ -->
+  <div style="background:linear-gradient(135deg,#0a0a0a,#111827 60%,#1a0a2e);border-radius:22px;padding:28px 30px;margin-bottom:20px;border:1px solid #2a2a3a;position:relative;overflow:hidden;">
+    <!-- Glow accent -->
+    <div style="position:absolute;top:-40px;right:-40px;width:180px;height:180px;background:radial-gradient(circle,rgba(250,197,0,0.15),transparent 70%);pointer-events:none;"></div>
+
+    <!-- Header -->
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:20px;">
+      <div>
+        <div style="font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#666;margin-bottom:8px;">G7Cripto · Dashboard ejecutivo · Para: Nicki — Líder de Marketing</div>
+        <div style="font-size:24px;font-weight:600;color:#fff;line-height:1.2;">Nicki, esto es lo que<br>necesito de vos ahora.</div>
+      </div>
+      <!-- SEMÁFORO -->
+      <div style="background:#1a1a2a;border:1px solid #2a2a3a;border-radius:16px;padding:16px 20px;text-align:center;min-width:140px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#555;margin-bottom:10px;">Estado proyecto</div>
+        <div style="font-size:44px;line-height:1;margin-bottom:8px;">🟡</div>
+        <div style="font-size:13px;font-weight:700;color:#FAC755;">CASI LISTO</div>
+        <div style="font-size:11px;color:#666;margin-top:4px;">1 pendiente crítico</div>
+      </div>
+    </div>
+
+    <!-- Fechas -->
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;">
+      <div style="background:rgba(255,255,255,.05);border:1px solid #2a2a3a;border-radius:10px;padding:10px 16px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#555;margin-bottom:4px;">Inicio del brief</div>
+        <div style="font-size:14px;font-weight:600;color:#aaa;">Abril 12, 2026</div>
+      </div>
+      <div style="display:flex;align-items:center;color:#444;font-size:18px;">→</div>
+      <div style="background:rgba(15,110,86,.15);border:1px solid rgba(15,110,86,.35);border-radius:10px;padding:10px 16px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#5DCAA5;margin-bottom:4px;">Última actualización</div>
+        <div style="font-size:14px;font-weight:600;color:#fff;">Abril 26, 2026</div>
+      </div>
+      <div style="background:rgba(250,197,0,.08);border:1px solid rgba(250,197,0,.25);border-radius:10px;padding:10px 16px;">
+        <div style="font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#FAC755;margin-bottom:4px;">Días transcurridos</div>
+        <div style="font-size:14px;font-weight:600;color:#FAC755;">14 días</div>
+      </div>
+    </div>
+
+    <!-- Estado general del proyecto -->
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:20px;">
+      <div style="background:rgba(15,110,86,.12);border:1px solid rgba(15,110,86,.3);border-radius:12px;padding:12px;display:flex;align-items:flex-start;gap:10px;">
+        <span style="font-size:18px;line-height:1.2;">✅</span>
+        <div>
+          <div style="font-size:12px;font-weight:600;color:#5DCAA5;">App G7Cripto</div>
+          <div style="font-size:11px;color:#4a9a7a;margin-top:2px;">Lista para recibir tráfico</div>
+        </div>
+      </div>
+      <div style="background:rgba(15,110,86,.12);border:1px solid rgba(15,110,86,.3);border-radius:12px;padding:12px;display:flex;align-items:flex-start;gap:10px;">
+        <span style="font-size:18px;line-height:1.2;">✅</span>
+        <div>
+          <div style="font-size:12px;font-weight:600;color:#5DCAA5;">Landings — 7 países</div>
+          <div style="font-size:11px;color:#4a9a7a;margin-top:2px;">CO·MX·AR·CL·EC·PA·UY</div>
+        </div>
+      </div>
+      <div style="background:rgba(15,110,86,.12);border:1px solid rgba(15,110,86,.3);border-radius:12px;padding:12px;display:flex;align-items:flex-start;gap:10px;">
+        <span style="font-size:18px;line-height:1.2;">✅</span>
+        <div>
+          <div style="font-size:12px;font-weight:600;color:#5DCAA5;">Diseños (Kevin)</div>
+          <div style="font-size:11px;color:#4a9a7a;margin-top:2px;">Google Ads + Meta listos</div>
+        </div>
+      </div>
+      <div style="background:rgba(15,110,86,.12);border:1px solid rgba(15,110,86,.3);border-radius:12px;padding:12px;display:flex;align-items:flex-start;gap:10px;">
+        <span style="font-size:18px;line-height:1.2;">✅</span>
+        <div>
+          <div style="font-size:12px;font-weight:600;color:#5DCAA5;">SOFI</div>
+          <div style="font-size:11px;color:#4a9a7a;margin-top:2px;">Actualizada y lista</div>
+        </div>
+      </div>
+      <div style="background:rgba(15,110,86,.12);border:1px solid rgba(15,110,86,.3);border-radius:12px;padding:12px;display:flex;align-items:flex-start;gap:10px;">
+        <span style="font-size:18px;line-height:1.2;">✅</span>
+        <div>
+          <div style="font-size:12px;font-weight:600;color:#5DCAA5;">Equipo operativo</div>
+          <div style="font-size:11px;color:#4a9a7a;margin-top:2px;">Alineado y listo</div>
+        </div>
+      </div>
+      <div style="background:rgba(15,110,86,.12);border:1px solid rgba(15,110,86,.3);border-radius:12px;padding:12px;display:flex;align-items:flex-start;gap:10px;">
+        <span style="font-size:18px;line-height:1.2;">✅</span>
+        <div>
+          <div style="font-size:12px;font-weight:600;color:#5DCAA5;">Eq. comercial/legal</div>
+          <div style="font-size:11px;color:#4a9a7a;margin-top:2px;">Alineado y listo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOS 2 PENDIENTES DE NICKI -->
+    <div style="border-top:1px solid #2a2a3a;padding-top:18px;">
+      <div style="font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#FAC755;margin-bottom:12px;">⚡ Nicki — 1 pendiente que bloquea el lanzamiento</div>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;">
+
+        <!-- PENDIENTE 1: PAUTAS -->
+        <div style="background:#0f0f1a;border:1.5px solid #FAC755;border-radius:14px;padding:16px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;">
+            <div style="font-size:13px;font-weight:700;color:#FAC755;">① ¿Pautas listas?</div>
+            <span style="background:rgba(250,197,0,.15);color:#FAC755;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;border:1px solid rgba(250,197,0,.3);">CONFIRMACIÓN REQUERIDA</span>
+          </div>
+          <div style="font-size:12px;color:#aaa;line-height:1.6;">Las campañas en Google Ads, Meta y TikTok deben estar configuradas y listas para activar en los <strong style="color:#fff;">7 países</strong>. Necesito saber:<br><br>
+            <span style="color:#FAC755;">→</span> ¿Las campañas ya están creadas?<br>
+            <span style="color:#FAC755;">→</span> ¿Los assets de Kevin están cargados?<br>
+            <span style="color:#FAC755;">→</span> ¿Están en revisión o aprobadas?
+          </div>
+        </div>
+
+        <!-- PENDIENTE 2: VIDEOS THIAGO -->
+        <div style="background:#0f0f1a;border:1.5px solid #FAC755;border-radius:14px;padding:16px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:10px;">
+            <div style="font-size:13px;font-weight:700;color:#FAC755;">② ¿Videos de Thiago listos?</div>
+            <span style="background:rgba(250,197,0,.15);color:#FAC755;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;border:1px solid rgba(250,197,0,.3);">CONFIRMACIÓN REQUERIDA</span>
+          </div>
+          <div style="font-size:12px;color:#aaa;line-height:1.6;">Son <strong style="color:#fff;">8 videos TikTok + 1 Spark Ad</strong> para los 7 países. Necesito saber:<br><br>
+            <span style="color:#FAC755;">→</span> ¿Thiago ya grabó los videos?<br>
+            <span style="color:#FAC755;">→</span> ¿Ya están editados con subtítulos y CTA?<br>
+            <span style="color:#FAC755;">→</span> ¿Están listos para subir o aún en edición?
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA final -->
+      <div style="background:rgba(15,110,86,.1);border:1px solid rgba(15,110,86,.25);border-radius:12px;padding:14px 18px;margin-top:12px;display:flex;align-items:center;gap:14px;">
+        <span style="font-size:28px;line-height:1;">🚀</span>
+        <div>
+          <div style="font-size:14px;font-weight:700;color:#5DCAA5;">Cuando estos 2 ítems estén listos, activamos.</div>
+          <div style="font-size:12px;color:#4a8a6a;margin-top:3px;">Todo lo demás está listo. El lanzamiento depende de vos y Thiago. Confirmame el estado lo antes posible.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ═══ SECCIÓN INTERNA 00 — GOBIERNO ═══ -->
   <div class="section-internal" style="margin-top:0">
     <div class="sec-header">
@@ -727,9 +854,8 @@
       <li>✅ <strong>Landing pages listas</strong> en los 7 países (CO · MX · AR · CL · EC · PA · UY).</li>
       <li>✅ <strong>Diseños gráficos listos</strong> — assets Kevin Barragán entregados (Google Ads + Meta estáticos + carrusel).</li>
       <li>✅ <strong>SOFI actualizada</strong> — lista.</li>
-      <li>✅ <strong>Equipo operativo alineado</strong> — listo.</li>
+      <li>✅ <strong>Equipo comercial / Tesorería / Finanzas / Legal alineado</strong> — listo.</li>
       <li>⏳ Producir y editar los 8 videos TikTok + 1 Spark Ad con Thiago.</li>
-      <li>⏳ Confirmar alineación final de equipos comercial, Tesorería, Finanzas y Legal antes de activar campañas.</li>
       <li>Construir campañas con foco exclusivo en descargas.</li>
       <li>Usar ahorro + rapidez como mensaje central en mercados de urgencia.</li>
       <li>Adaptar el discurso a USD directo en Ecuador y Panamá.</li>
@@ -742,7 +868,7 @@
 
   <!-- ═══ FOOTER ═══ -->
   <div class="footer">
-    Documento interno de trabajo desarrollado por <strong>Guillermo L. Valencia (CEO)</strong>. Versión <strong>V3 · Actualizada Abril 26, 2026</strong>. Estado: App G7Cripto ✅ · Landing pages 7 países ✅ · Diseños gráficos (Kevin Barragán) ✅ · SOFI ✅ · Equipo operativo ✅ · Videos Thiago + Nicki ⏳ · Equipos comercial/Tesorería/Finanzas/Legal ⏳. Incluye a <strong>THIAGO</strong> como embajador oficial de marca G7Cripto en todos los mercados y canales. Metodología con lineamientos vigentes de Google Ads, Meta y TikTok, revisados en abril de 2026.
+    Documento interno de trabajo desarrollado por <strong>Guillermo L. Valencia (CEO)</strong>. Versión <strong>V3 · Actualizada Abril 26, 2026</strong>. Estado: App G7Cripto ✅ · Landing pages 7 países ✅ · Diseños gráficos (Kevin Barragán) ✅ · SOFI ✅ · Equipo operativo ✅ · Equipo comercial/legal ✅ · Videos Thiago + Nicki ⏳. Incluye a <strong>THIAGO</strong> como embajador oficial de marca G7Cripto en todos los mercados y canales. Metodología con lineamientos vigentes de Google Ads, Meta y TikTok, revisados en abril de 2026.
   </div>
 
 </div>
